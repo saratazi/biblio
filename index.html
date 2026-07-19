@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1><i class="fa-solid fa-book"></i> Gestion de Bibliothèque</h1>
+        <p>Ajouter, rechercher, modifier et supprimer vos livres</p>
+    </header>
+
+    <div class="container">
+
+        <div class="form-card">
+            <h2>Ajouter un Livre</h2>
+
+            <input type="text" id="titre" placeholder="Titre du livre">
+
+            <input type="text" id="auteur" placeholder="Auteur">
+
+            <input type="number" id="pages" placeholder="Nombre de pages">
+
+            <input type="number" id="prix" placeholder="Prix">
+
+            <button id="btnAjouter">
+            <i class="fa-solid fa-plus"></i>
+            Ajouter
+        </button>
+        </div>
+
+        <div class="search-card">
+
+            <input type="text" id="recherche" placeholder="🔍 Rechercher un livre...">
+
+        </div>
+
+        <div class="stats">
+
+            <div class="box">
+                <h3>Total Livres</h3>
+                <span id="nbLivres">0</span>
+            </div>
+
+            <div class="box">
+                <h3>Prix Total</h3>
+                <span id="prixTotal">0 DH</span>
+            </div>
+
+            <div class="box">
+                <h3>Prix Moyen</h3>
+                <span id="prixMoyen">0 DH</span>
+            </div>
+
+        </div>
+
+        <h2 class="titreListe">
+            Liste des Livres
+        </h2>
+
+        <div id="listeLivres">
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p>
+            © 2026 Bibliothèque | Projet HTML CSS JavaScript
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
